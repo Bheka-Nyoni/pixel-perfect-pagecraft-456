@@ -28,3 +28,10 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- All portfolio content lives in typed files under `src/data/`; components in `src/components/portfolio/` only render it — keeps a future backend swap UI-free.
+- The site is one scrolling page at `/` with hash-anchor sections, by explicit owner request.
+- Contact form posts directly from the browser to a form-to-email service configured by `VITE_FORM_ENDPOINT` (URL = Formspree, bare key = Web3Forms); no custom backend.
+- Glass, glow and reveal effects are `@utility` classes in `src/styles.css`; reuse them instead of ad hoc styles.
