@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useState, type FormEvent, type ReactNode } from "react";
 import { AlertCircle, CheckCircle2, Loader2, Send } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -81,7 +81,7 @@ export function ContactForm() {
   const sending = status === "sending";
 
   return (
-    <form noValidate onSubmit={onSubmit} className="glass rounded-xl p-6 md:p-8" aria-label="Contact form">
+    <form noValidate onSubmit={onSubmit} className="glass relative rounded-xl p-6 md:p-8" aria-label="Contact form">
       {/* Honeypot: hidden from people and assistive tech */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
         <label htmlFor="contact-company">Company</label>
@@ -177,7 +177,7 @@ function Field({
   id: string;
   label: string;
   error?: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <div className="flex flex-col gap-2">
