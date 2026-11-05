@@ -37,7 +37,7 @@ export async function sendContact(values: ContactValues, target: FormTarget): Pr
     message: values.message,
     subject: `Portfolio message from ${values.name}`,
   };
-  if (target.kind === "web3forms") body.access_key = target.accessKey;
+  if (target.kind === "web3forms") body["access_key"] = target.accessKey;
 
   const res = await fetch(target.url, {
     method: "POST",
