@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section id="top" aria-labelledby="hero-heading" className="relative overflow-hidden">
       <div aria-hidden="true" className="hero-glow pointer-events-none absolute inset-0" />
-      <div className="container-page relative pt-16 pb-20 md:pt-28 md:pb-28">
+      <div className="container-page relative pt-16 pb-4 md:pt-28 md:pb-8">
         <div className="max-w-3xl">
           <p className="font-mono text-sm text-primary animate-in fade-in-0 duration-500">
             {hero.label}

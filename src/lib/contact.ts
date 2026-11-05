@@ -30,7 +30,7 @@ export function resolveFormTarget(value: string | undefined): FormTarget {
 }
 
 export async function sendContact(values: ContactValues, target: FormTarget): Promise<void> {
-  if (!target) throw new Error("Contact form is not configured yet.");
+  if (!target) throw new Error("the contact form is not connected yet");
   const body: Record<string, string> = {
     name: values.name,
     email: values.email,

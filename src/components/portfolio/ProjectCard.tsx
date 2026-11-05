@@ -26,7 +26,7 @@ function CardVisual({ project }: { project: Project }) {
         <span className="size-2 rounded-full bg-border-strong" />
       </div>
       <figure
-        className="relative flex flex-wrap items-center justify-center gap-2"
+        className="relative flex flex-wrap items-center justify-center gap-1.5"
         aria-label={`Architecture: ${project.diagram.join(" to ")}`}
       >
         {project.diagram.map((node, i) => (

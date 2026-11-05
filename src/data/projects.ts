@@ -72,7 +72,7 @@ export const projects: Project[] = [
     ],
     tech: ["Flutter", "Dart", "MongoDB", "Python"],
     categories: ["QA", "Frontend"],
-    diagram: ["Test plan", "Flutter app", "Bug report"],
+    diagram: ["Test cases", "Flutter", "Bug log"],
     githubUrl: "https://github.com/YOUR-USERNAME/REPO", // TODO: replace
     badge: "QA Role",
   },
